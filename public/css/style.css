@@ -296,6 +296,15 @@ button a{
         color: white; 
 }
 
+.caja:hover {
+    background-color: beige;
+}
+
+.caja:visited{
+    background-color: black;
+
+}
+
 
 
 
@@ -338,7 +347,7 @@ button a{
         display: none;
     }
 
-    .main-articule{
+    main section div{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
