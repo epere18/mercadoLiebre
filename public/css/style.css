@@ -1,0 +1,369 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #EAC926;
+    width: 100%;
+    padding: 10px;
+}
+
+ .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    width: fit-content;
+    
+}
+
+header .form {
+    margin-top: 20px;
+    width: auto;
+    padding: 5px;
+    
+}
+
+.input{
+    border-radius: 3%;
+}
+
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: auto;
+    padding: 2px;   
+    border-radius: 10%;
+}
+
+header span i{    
+    background-color: auto;  
+    font-size: 1rem; 
+    padding-bottom: 10px; 
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+nav div i{    
+    background-color: auto;  
+    font-size: 1rem; 
+    padding-bottom: 10px; 
+    text-align: center;
+}
+/* 
+main div i{    
+    background-color: auto;  
+    font-size: 1rem; 
+    padding-bottom: 10px; 
+    text-align: center;
+} */
+
+section div i{    
+    background-color: auto;  
+    font-size: 1rem; 
+    padding-bottom: 10px; 
+    text-align: center;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+i{
+    background-color: auto;  
+    font-size: 2em; 
+    padding-bottom: 1px; 
+}
+
+h3{
+    font-size: 12px;
+    color: rgb(90, 88, 88);
+    margin-bottom: 10px;
+}
+
+.center{
+    text-align: center;
+}
+
+.logo{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.titular{
+    font-size: 24px;
+    text-align: center;
+    color: rgb(78, 78, 78);
+}
+
+.producto{
+    display: block;
+    margin: 0 auto;
+    background-color: white;
+    padding-left: 5%;    
+    padding-top: 25px;
+    color: green;
+    position: relative;
+}
+
+.precio{
+    font-size: 18px;
+    color:black;
+    line-height: 1px;
+    padding-top: 3%;
+    font-weight: bold;
+}
+
+.descuento{
+    font-size: 16px;
+    line-height: 1px;
+    color: green;
+}
+
+.descripcion{
+    font-size: 16px;
+    padding-bottom: 15px;
+    color: rgb(105, 105, 105);
+    display: none;
+}
+
+.burger-menu{
+    background-color: #033d7c;
+    width: 40px;
+    border-radius: 8px;
+    margin: 20px auto;
+    padding: 0.1px;   
+}
+
+
+.burger-menu-i{
+    width: auto;
+    color: white;  
+    text-align: center;  
+    margin-top: 20%;
+    font-size: 20px;
+}
+/* 
+.transporte {
+    border-radius: 50%;
+    border: solid green 1px;
+    padding: 15px;
+} */
+
+body{
+    background-color: rgb(218, 212, 212);
+    margin: 0 auto;
+}
+
+main{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(218, 212, 212);
+}
+
+.main{
+    display: block;
+    margin: 0 auto;
+    background-color: white;
+    border-top: solid 1px #ebebeb;
+    margin-top: 10px;
+}
+
+nav i{
+    font-size: 1.3rem;
+}
+
+.nav-bar ul{
+    list-style: none;
+    padding: 0;
+
+}
+
+/* article{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(218, 212, 212);
+} */
+
+.img{
+    width: 100%;
+    display: block;
+    border-bottom: solid 1px rgb(218, 212, 212);
+
+}
+
+.banner{
+    width: 100%;
+    display: block;
+    border-bottom: solid 1px rgb(218, 212, 212);
+
+}
+
+footer{
+    background-color: #ffffff;
+    font-size: 15px;
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+footer p{
+    color: rgb(134, 133, 133);
+}
+
+footer h4{
+    color: rgb(187, 185, 185);
+    margin-top: 20px;
+    font-size: 10px;
+}
+
+footer div{
+    margin-bottom: 10px;
+}
+
+form{
+    padding: 20px 15px;
+}
+
+form div{
+    margin-bottom: 15px;
+}
+
+form div label{
+    font-weight: bold;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.caja{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px rgb(211, 208, 208);
+}
+
+.espacio{
+    justify-content: space-between;
+}
+
+.buscador{
+    width: auto;
+}
+
+button{
+    background-color: rgb(55, 55, 245);
+    color: white;
+    border: none;
+    display: block;
+    width: 50%;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px auto;
+    text-decoration: white;    
+}
+
+button a{
+        text-decoration: none;
+        color: white; 
+}
+
+
+
+
+
+
+@media (min-width: 320px){
+
+   article{
+        padding-bottom: 1px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    footer{
+        margin: 20px 0 0 0;
+    }
+/* 
+    .main{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    } */
+    
+    nav ul{
+        display: none;
+    }
+
+    
+        
+}
+
+@media (min-width: 361px){
+
+    nav ul{
+        display: block;
+    }
+
+    .nav-bar{
+        display: block;
+    }
+
+    nav div{
+        display: none;
+    }
+
+    .main-articule{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    } 
+
+    .descripcion{
+        display: block;
+        
+    }
+
+    .logo{
+        width: 30%;
+        margin: 0px;
+    }
+
+    .center{
+        text-align: right;
+        padding: 15px;
+    }
+}
+
+
+
+
+
+
