@@ -23,11 +23,28 @@ header{
 }
 
 header .form {
-    margin-top: 20px;
-    width: auto;
-    padding: 5px;
-    
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;    
 }
+
+header div.logo, header .form {
+    width: 50%;
+}
+
+header .form .input     {
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    height: 20px;
+    width: 80%;
+    max-width: 500px;
+    flex: auto;
+}
+
 
 .input{
     border-radius: 3%;
@@ -139,7 +156,15 @@ h3{
 .descuento{
     font-size: 16px;
     line-height: 1px;
-    color: green;
+    color: green;    
+    margin: 0 20px;
+}
+
+
+
+.precio, .descuento{
+    display: flex;
+    font-weight: bold;
 }
 
 .descripcion{
@@ -202,12 +227,15 @@ nav i{
 
 }
 
-/* article{
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    background-color: rgb(218, 212, 212);
-} */
+article div.producto {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 20px;
+}
 
 .img{
     width: 100%;
@@ -305,6 +333,12 @@ button a{
 
 }
 
+div.main-bar{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
 
 
 
@@ -347,7 +381,7 @@ button a{
         display: none;
     }
 
-    main section div{
+    main section div.main-articule{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
