@@ -339,7 +339,9 @@ div.main-bar{
     padding: 5%;
 }
 
-
+header form span i{
+    width: 50px;
+}
 
 
 
