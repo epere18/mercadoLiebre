@@ -9,31 +9,38 @@
 header{
     background-color: #EAC926;
     width: 100%;
-    padding: 10px;
+    padding: 5px;
+}
+
+.buscar{
+    border: 0; 
 }
 
  .input{
     background-color: #FFF;
-    border: 1px solid #000;
     outline: none;
     color: #666;
     padding: 2px;
-    width: fit-content;
-    
+    display: flex;
+    border-radius: 5px;
+    height: 20px;
+    justify-content: space-between;
+    width: 25%;
 }
 
 header .form {
     display: flex;
     align-items: center;
     padding: 2px;
-    font-size: 11px;    
+    font-size: 10px;    
+    width: 30%;
 }
-
+/* 
 header div.logo, header .form {
     width: 50%;
-}
+} */
 
-header .form .input     {
+/* header .form .input     {
     background-color: #FFF;
     border: 1px solid #000;
     outline: none;
@@ -43,12 +50,10 @@ header .form .input     {
     width: 80%;
     max-width: 500px;
     flex: auto;
-}
+} */
 
 
-.input{
-    border-radius: 3%;
-}
+/* 
 
 header .form .submit{
     background-color: #FFF;
@@ -63,7 +68,7 @@ header span i{
     background-color: auto;  
     font-size: 1rem; 
     padding-bottom: 10px; 
-}
+} */
 
 main section article i{
     display: block;
@@ -118,7 +123,7 @@ h3{
     margin-bottom: 10px;
 }
 
-.center{
+p.center{
     text-align: center;
 }
 
@@ -133,6 +138,8 @@ h3{
     font-size: 24px;
     text-align: center;
     color: rgb(78, 78, 78);
+    margin: 20px 0;
+    font-weight: bold;
 }
 
 .producto{
@@ -148,30 +155,32 @@ h3{
 .precio{
     font-size: 18px;
     color:black;
-    line-height: 1px;
-    padding-top: 3%;
+    /* line-height: 1px;
+    padding-top: 3%; */
     font-weight: bold;
+    width: 30%;
 }
 
 .descuento{
     font-size: 16px;
     line-height: 1px;
     color: green;    
-    margin: 0 20px;
+    /* margin: 0 20px; */
+    width: 70%;
 }
 
 
 
-.precio, .descuento{
+/* .precio, .descuento{
     display: flex;
     font-weight: bold;
-}
+} */
 
 .descripcion{
     font-size: 16px;
-    padding-bottom: 15px;
     color: rgb(105, 105, 105);
     display: none;
+    margin-top: 20px;
 }
 
 .burger-menu{
@@ -198,7 +207,7 @@ h3{
 } */
 
 body{
-    background-color: rgb(218, 212, 212);
+    background-color: #ebebeb;
     margin: 0 auto;
 }
 
@@ -206,15 +215,17 @@ main{
     width: 90%;
     display: block;
     margin: 0 auto;
-    background-color: rgb(218, 212, 212);
+    
+}
+
+main section article {
+    background-color: #fff;
+    margin: 10px 0px;
 }
 
 .main{
-    display: block;
-    margin: 0 auto;
-    background-color: white;
     border-top: solid 1px #ebebeb;
-    margin-top: 10px;
+    
 }
 
 nav i{
@@ -335,34 +346,54 @@ button a{
 
 div.main-bar{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-    padding: 5%;
 }
 
 header form span i{
     width: 50px;
+    
 }
+
+section.ultima-visita,
+section.ofertas{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
 
 
 
 
 @media (min-width: 320px){
 
-   article{
-        padding-bottom: 1px;
+    main section article:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
+ 
+
+   /* article{
+        padding-bottom: 1px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    } */
 
     footer{
         margin: 20px 0 0 0;
     }
-/* 
-    .main{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    } */
     
     nav ul{
         display: none;
+    }
+
+    main section div.main-articule article i{
+        transition: transform 1s;
+    }
+    
+    main section div.main-articule article:hover i{
+        transform: rotate(-90deg);
     }
 
     
@@ -371,16 +402,18 @@ header form span i{
 
 @media (min-width: 361px){
 
-    nav ul{
+
+    main section article:hover .descripcion{
         display: block;
+        transition: all 200ms;
+    }
+
+    nav ul{
+        display: none;
     }
 
     .nav-bar{
-        display: block;
-    }
-
-    nav div{
-        display: none;
+        display: block;      
     }
 
     main section div.main-articule{
@@ -391,24 +424,82 @@ header form span i{
         align-items: flex-start;
     } 
 
-    .descripcion{
-        display: block;
+    main section div.main-articule article{
+        width: 45%;
         
     }
 
     .logo{
-        width: 30%;
+        width: 50%;
         margin: 0px;
+    }
+
+    div.main-bar {
+        padding-bottom: 5px;
     }
 
     .center{
         text-align: right;
         padding: 15px;
     }
+
+    .precio,
+    .descuento{
+        width: 50%;
+    }
+/* 
+    .descuento{
+        margin: 0 20px;
+    } */
+
+    div.main-bar{
+        flex-wrap: nowrap;
+    }
+
+ 
 }
 
+@media (min-width: 768px){
 
+    div.main-bar {
+    flex-wrap: nowrap;
+}
 
+    .burger-menu{
+        display: none;      
+    }
 
+    .logo{
+        width: 22%;
+        margin: 0px;
+    }
 
+    main section div.main-articule article{
+        width: 22%;
+    }
 
+    .nav-bar{       
+        display: flex;
+     
+    
+    }
+
+    .left-bar{
+        width: 100%;
+        display: flex;
+        padding: 5px;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 90px;
+    }
+
+    .right-bar{
+        width: 100%;
+        display: flex;
+        padding-right: 5px;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 90px;
+    }
+
+}
