@@ -23,9 +23,8 @@ header{
     padding: 2px;
     display: flex;
     border-radius: 5px;
-    height: 20px;
     justify-content: space-between;
-    width: 25%;
+    
 }
 
 header .form {
@@ -125,13 +124,16 @@ h3{
 
 p.center{
     text-align: center;
+    margin-top: 10px;
+    color: black;
 }
 
 .logo{
     width: 50%;
     display: block;
     margin: 0 auto;
-    padding: 1%;
+    padding-right: 10px;
+    padding-top: 10px;
 }
 
 .titular{
@@ -274,9 +276,12 @@ footer{
     box-sizing: border-box;
 }
 
-footer p{
+     p{
     color: rgb(134, 133, 133);
-}
+    
+}   
+
+    
 
 footer h4{
     color: rgb(187, 185, 185);
@@ -284,12 +289,16 @@ footer h4{
     font-size: 10px;
 }
 
-footer div{
-    margin-bottom: 10px;
+
+
+footer section div i{
+    font-size: 20px;
 }
 
+
+
 form{
-    padding: 20px 15px;
+    padding: 90px 80px;
 }
 
 form div{
@@ -344,16 +353,16 @@ button a{
 
 }
 
-div.main-bar{
+div.main-bar1{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+
 }
 
 header form span i{
     width: 50px;
-    
+
 }
 
 section.ultima-visita,
@@ -380,9 +389,9 @@ section.ofertas{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     } */
 
-    footer{
+    /* footer{
         margin: 20px 0 0 0;
-    }
+    } */
     
     nav ul{
         display: none;
@@ -422,6 +431,7 @@ section.ofertas{
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-start;
+        margin-bottom: 30px;
     } 
 
     main section div.main-articule article{
@@ -456,6 +466,9 @@ section.ofertas{
         flex-wrap: nowrap;
     }
 
+    footer section div{
+        margin-bottom: 10px;
+    }
  
 }
 
@@ -500,6 +513,32 @@ section.ofertas{
         align-items: center;
         justify-content: space-between;
         margin-right: 90px;
+    }
+
+    footer section {
+        margin: 20px 10px 10px 10px;
+        display: flex;
+        position: relative;
+    }
+
+    .copyrigth{
+        display: block;
+        position: absolute;
+        left: 35%;
+        bottom: 0;
+        margin-bottom: -20px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
+
+    footer section div{
+        margin-bottom: 30px;
+    }
+
+    div.main-bar1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
 }
