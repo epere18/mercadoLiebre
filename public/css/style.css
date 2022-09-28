@@ -588,6 +588,13 @@ section.ofertas{
         font-size: 16px;
     }
 
+    div.main-bar1{
+        display: contents;
+        align-items: center;
+        justify-content: space-between;
+    
+    }
+
     
 
 }
