@@ -246,9 +246,10 @@ article div.producto {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-    border-top: 1px solid #ebebeb;
+    border-top: 1px solid transparent;
     position: relative;
     padding: 20px;
+    cursor: pointer;
 }
 
 .img{
@@ -424,11 +425,15 @@ section.ofertas{
 
     main section div.main-articule article i{
         transition: transform 1s;
+       
     }
     
     main section div.main-articule article:hover i{
         transform: rotate(-90deg);
+        
     }
+
+   
 
     
         
@@ -440,6 +445,7 @@ section.ofertas{
     main section article:hover .descripcion{
         display: block;
         transition: all 200ms;
+        
     }
 
     nav ul{
@@ -478,14 +484,14 @@ section.ofertas{
         padding: 15px;
     }
 
-    .precio,
-    .descuento{
+    .precio{
         width: 50%;
     }
-/* 
+
     .descuento{
-        margin: 0 20px;
-    } */
+        /* margin: 0 20px; */
+        width: 50%;
+    }
 
     div.main-bar{
         flex-wrap: nowrap;
@@ -570,6 +576,16 @@ section.ofertas{
         align-items: center;
         justify-content: space-between;
         position: relative;
+    }
+
+    main section div.main-articule article:hover i{
+        cursor: pointer; 
+        z-index: 1;
+        display: inline-block;
+    }
+
+    .precio{
+        font-size: 16px;
     }
 
     
