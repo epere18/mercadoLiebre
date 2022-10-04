@@ -351,8 +351,6 @@ button{
     font-size: 14px;   
 }
 
-
-
 button:hover{
     background-color: #3483fa;
     border-color: transparent;
@@ -364,16 +362,12 @@ button:hover{
     color: #3483fa;
     background-color: white;
     border-color: transparent;
-
 }
 
-.fondo1:hover{
-    background-color: #3483fa;
-    border-color: transparent;
+/* .fondo1:hover{   
     color: #fff;
     transition: background-color .2s ease-in;
-}
-
+} */
 
 .caja:hover {
     background-color: beige;
@@ -637,7 +631,11 @@ h2{
     }
 
     button{
-        width: 30%;
+        width: 50%;
+    }
+
+    .formulario{
+        width: 50%;
     }
 
     .input{
