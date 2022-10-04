@@ -58,7 +58,10 @@
     </header>
 
     <main class="formulario">   
-        <form action="/login" method="POST">
+        <form action="/" method="GET">
+            <div>
+                <h2>¡Hola! Para seguir, ingresá tu usuario</h2>
+            </div>
             <div>
                 <label for="usuario">Nombre de usuari@*</label>
                 <input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario" class="caja">
@@ -67,7 +70,9 @@
                 <label for="password">Contraseña*</label>
                 <input type="password" name="password" id="password" placeholder="Ingrese contraseña" class="caja">
             </div>                        
-                <span class="fondo"><button type="submit"><a href="/">Enviar</a></button></span>               
+                <span><button type="submit">Continuar</button></span>  
+                <span><button type="submit" class="fondo1">Crear cuenta</button></span>
+                <span><button type="submit" class="fondo1">Restablecer contraseña</button></span>             
         </form>
     </main>
     <footer>

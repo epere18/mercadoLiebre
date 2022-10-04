@@ -14,6 +14,7 @@ header{
 
 .buscar{
     border: 0; 
+    height: 20px;
 }
 
  .input{
@@ -337,26 +338,42 @@ form div label{
 }
 
 button{
-    background-color: rgb(55, 55, 245);
+    background-color: #3483fa;
     color: white;
-    border: none;
+    border: transparent;
     display: block;
-    width: 50%;
+    width: 100%;
     border-radius: 5px;
     padding: 10px;
-    margin: 50px auto;
-    text-decoration: white;    
+    margin: 20px auto;
+    text-decoration: white; 
+    font-weight: 600;
+    font-size: 14px;   
 }
+
+
 
 button:hover{
-    background-color: #0022AA;
+    background-color: #3483fa;
+    border-color: transparent;
+    color: #fff;
+    transition: background-color .2s ease-in;
 }
 
+.fondo1{
+    color: #3483fa;
+    background-color: white;
+    border-color: transparent;
 
-button a{
-        text-decoration: none;
-        color: white; 
 }
+
+.fondo1:hover{
+    background-color: #3483fa;
+    border-color: transparent;
+    color: #fff;
+    transition: background-color .2s ease-in;
+}
+
 
 .caja:hover {
     background-color: beige;
@@ -399,6 +416,11 @@ section.ofertas{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
+h2{
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+}
 
 
 
@@ -524,8 +546,7 @@ section.ofertas{
 
     .nav-bar{       
         display: flex;
-        padding: 10px;
-     
+        padding: 10px;    
     
     }
 
@@ -535,7 +556,17 @@ section.ofertas{
         padding: 5px;
         align-items: center;
         justify-content: space-around;
-        margin-left: 10%;
+        
+    }
+
+    .left-bar a{
+        color: rgb(70, 69, 69);
+    }
+
+    .left-bar a:hover{
+        color: black;
+        font-weight: 580;
+        
     }
 
     .right-bar{
@@ -545,6 +576,15 @@ section.ofertas{
         align-items: center;
         justify-content: space-around;
         margin-right: 20%;
+    }
+
+    .right-bar a{
+        color: rgb(70, 69, 69);
+    }
+
+    .right-bar a:hover{
+        color: black;
+        font-weight: 580;
     }
 
     header a{
@@ -576,6 +616,7 @@ section.ofertas{
         align-items: center;
         justify-content: space-between;
         position: relative;
+        padding-bottom: 10px;
     }
 
     main section div.main-articule article:hover i{
@@ -595,6 +636,41 @@ section.ofertas{
     
     }
 
+    button{
+        width: 30%;
+    }
+
+    .input{
+        width: 30%;
+    }
+
+    .input i{
+        color: #666;
+        position: absolute;
+        right: 42.5%;
+        font-size: 16px
+    }
+
     
 
+}
+
+@media (min-width: 1024px){
+
+    .input i{
+        color: #666;
+        position: absolute;
+        right: 38%;
+        font-size: 16px
+    }
+}
+
+@media (min-width: 1044px){
+
+    .input i{
+        color: #666;
+        position: absolute;
+        right: 34.6%;
+        font-size: 16px
+    }
 }
